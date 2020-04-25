@@ -62,7 +62,8 @@ From your shell or command line:
 ### Step 4: Configure your server
 
 * Provide the parameters in `exports.creds` in config.js as instructed.
-
+* responseType: 'code'
+* 
 * Update `exports.destroySessionUrl` in config.js, if you want to use a different `post_logout_redirect_uri`.
 
 
@@ -73,9 +74,6 @@ From your shell or command line:
 ```
 $ node app.js
 ```
-
-### You're done!
-You will have a server successfully running on `http://localhost:3000`.
 
 ## User Experience
 When the user selects the configured wireless SSID, a splash page will be shown prompting for their Azure AD Credentials.
